@@ -595,7 +595,7 @@ public class Calculator extends JFrame{
     }
     private double doCalc (String op1,String op2 ,String opr){
         
-        if (Pattern.matches(numberEx, op1) && Pattern.matches(numberEx, op2)){
+        if (Pattern.matches(numberEx, op1) && Pattern.matches(numberEx, op2)){ // guarantees the number format in both operands 
         Double d1  =  Double.valueOf(op1);
         Double d2  = Double.valueOf(op2);
         
